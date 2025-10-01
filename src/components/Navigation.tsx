@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-enas.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +20,8 @@ const Navigation = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container flex h-16 items-center justify-between px-4">
-        <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <img src={logo} alt="ENAS logo" className="h-10 w-auto brightness-0" />
-          <span className="font-semibold text-lg hidden sm:inline">Urve Tõnnuse disain</span>
+        <Link to="/" className="hover:opacity-80 transition-opacity">
+          <span className="font-semibold text-lg">Urve Tõnnuse disain</span>
         </Link>
 
         {/* Desktop Navigation */}
