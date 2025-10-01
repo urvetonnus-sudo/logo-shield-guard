@@ -70,8 +70,8 @@ const ChristmasCTA = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Telefon</p>
-                    <a href="tel:+372XXXXXXXX" className="font-medium hover:text-primary transition-colors">
-                      +372 XXXX XXXX
+                    <a href="tel:+3725168045" className="font-medium hover:text-primary transition-colors">
+                      +372 5168045
                     </a>
                   </div>
                 </div>
