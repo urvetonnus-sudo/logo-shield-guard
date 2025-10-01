@@ -1,9 +1,25 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone, ArrowRight } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const CTA = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setTimeout(() => {
+      toast({ title: "Päring saadetud!", description: "Võtame teiega peagi ühendust." });
+      setIsSubmitting(false);
+      (e.target as HTMLFormElement).reset();
+    }, 1000);
+  };
+
   return (
     <section className="py-20 px-6 bg-primary text-primary-foreground">
       <div className="max-w-4xl mx-auto text-center">
@@ -18,25 +34,30 @@ const CTA = () => {
           <Card className="p-8 bg-white/10 backdrop-blur border-white/20">
             <h3 className="text-2xl font-semibold mb-4 text-white">Kiire päring</h3>
             <p className="mb-6 text-white/80">Täitke vorm ja võtame teiega ühendust 24 tunni jooksul</p>
-            <div className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <Input 
+                name="name"
                 placeholder="Teie nimi" 
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                required
               />
               <Input 
+                name="email"
                 type="email" 
                 placeholder="E-posti aadress" 
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                required
               />
               <Input 
+                name="company"
                 placeholder="Ettevõtte nimi" 
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
               />
-              <Button variant="cta" size="lg" className="w-full">
-                Saada päring
+              <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Saadan..." : "Saada päring"}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-            </div>
+            </form>
           </Card>
 
           <Card className="p-8 bg-white/10 backdrop-blur border-white/20">

@@ -1,10 +1,25 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const ChristmasCTA = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setTimeout(() => {
+      toast({ title: "Päring saadetud!", description: "Võtame teiega peagi ühendust." });
+      setIsSubmitting(false);
+      (e.target as HTMLFormElement).reset();
+    }, 1000);
+  };
+
   return (
     <section id="order-section" className="py-20 px-4 bg-primary text-primary-foreground">
       <div className="container max-w-6xl mx-auto">
@@ -23,25 +38,21 @@ const ChristmasCTA = () => {
               <CardTitle>Kiire päring</CardTitle>
               <CardDescription>Täitke vorm ja võtame teiega 24 tunni jooksul ühendust</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <Input placeholder="Teie nimi" className="bg-background" />
-              </div>
-              <div>
-                <Input type="email" placeholder="E-posti aadress" className="bg-background" />
-              </div>
-              <div>
-                <Input placeholder="Ettevõtte nimi" className="bg-background" />
-              </div>
-              <div>
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <Input name="name" placeholder="Teie nimi" className="bg-background" required />
+                <Input name="email" type="email" placeholder="E-posti aadress" className="bg-background" required />
+                <Input name="company" placeholder="Ettevõtte nimi" className="bg-background" />
                 <Textarea 
+                  name="message"
                   placeholder="Kirjeldage oma soove (kaarditüüp, kogus, tähtaeg...)" 
                   className="bg-background min-h-[100px]"
+                  required
                 />
-              </div>
-              <Button variant="cta" className="w-full" size="lg">
-                Saada päring
-              </Button>
+                <Button type="submit" variant="cta" className="w-full" size="lg" disabled={isSubmitting}>
+                  {isSubmitting ? "Saadan..." : "Saada päring"}
+                </Button>
+              </form>
             </CardContent>
           </Card>
 
