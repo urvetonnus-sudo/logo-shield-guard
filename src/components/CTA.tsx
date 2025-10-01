@@ -49,8 +49,8 @@ const CTA = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-white mb-1">E-post</p>
-                  <a href="mailto:info@logoregistreerimine.ee" className="text-white/90 hover:text-white underline">
-                    info@logoregistreerimine.ee
+                  <a href="mailto:urvetonnus@gmail.com" className="text-white/90 hover:text-white underline">
+                    urvetonnus@gmail.com
                   </a>
                 </div>
               </div>
@@ -61,8 +61,8 @@ const CTA = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-white mb-1">Telefon</p>
-                  <a href="tel:+3725551234" className="text-white/90 hover:text-white">
-                    +372 555 1234
+                  <a href="tel:+3725168045" className="text-white/90 hover:text-white">
+                    +372 5168045
                   </a>
                 </div>
               </div>
