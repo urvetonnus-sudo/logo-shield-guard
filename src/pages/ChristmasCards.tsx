@@ -4,6 +4,7 @@ import ChristmasIntro from "@/components/christmas/ChristmasIntro";
 import CardTypes from "@/components/christmas/CardTypes";
 import BrandIdentity from "@/components/christmas/BrandIdentity";
 import OrderProcess from "@/components/christmas/OrderProcess";
+import ChristmasPortfolio from "@/components/christmas/ChristmasPortfolio";
 import ChristmasCTA from "@/components/christmas/ChristmasCTA";
 
 const ChristmasCards = () => {
@@ -35,6 +36,7 @@ const ChristmasCards = () => {
         <CardTypes />
         <BrandIdentity />
         <OrderProcess />
+        <ChristmasPortfolio />
         <ChristmasCTA />
       </main>
     </>

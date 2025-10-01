@@ -84,13 +84,13 @@ const updateStructuredData = (data: object) => {
 };
 
 const initializeAnalytics = () => {
-  // Google Analytics 4 - Add your GA4 ID here
-  const GA4_ID = "G-XXXXXXXXXX"; // Replace with actual ID
+  // Google Analytics - Universal Analytics
+  const GA_ID = "UA-30022975-1";
   
-  if (!window.gtag && GA4_ID !== "G-XXXXXXXXXX") {
+  if (!window.gtag) {
     const script = document.createElement("script");
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
     document.head.appendChild(script);
 
     window.dataLayer = window.dataLayer || [];
@@ -98,7 +98,7 @@ const initializeAnalytics = () => {
       window.dataLayer.push(arguments);
     };
     window.gtag("js", new Date());
-    window.gtag("config", GA4_ID);
+    window.gtag("config", GA_ID);
   }
 };
 

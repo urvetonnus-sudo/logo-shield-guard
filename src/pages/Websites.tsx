@@ -4,6 +4,7 @@ import WhyYouNeed from "@/components/websites/WhyYouNeed";
 import ForWhom from "@/components/websites/ForWhom";
 import DesignProcess from "@/components/websites/DesignProcess";
 import Examples from "@/components/websites/Examples";
+import WebsitesPortfolio from "@/components/websites/WebsitesPortfolio";
 import WebsitesCTA from "@/components/websites/WebsitesCTA";
 
 const Websites = () => {
@@ -35,6 +36,7 @@ const Websites = () => {
         <ForWhom />
         <DesignProcess />
         <Examples />
+        <WebsitesPortfolio />
         <WebsitesCTA />
       </main>
     </>
