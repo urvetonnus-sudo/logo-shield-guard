@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail, Award, Palette, Heart } from "lucide-react";
-import logo from "@/assets/logo-enas.png";
+import portrait from "@/assets/urve-portrait.png";
 
 const About = () => {
   const structuredData = {
@@ -32,15 +32,19 @@ const About = () => {
         <div className="container max-w-4xl mx-auto space-y-16">
           {/* Hero Section */}
           <section className="text-center space-y-6 animate-fade-in">
-            <div className="flex justify-center mb-6">
-              <img src={logo} alt="ENAS" className="h-20 w-auto brightness-0" />
+            <div className="flex justify-center mb-8">
+              <img 
+                src={portrait} 
+                alt="Urve Tõnnus" 
+                className="w-48 h-48 rounded-full object-cover shadow-2xl ring-4 ring-primary/20" 
+              />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold">
-              Tere, mina olen <span className="text-primary">Urve Tõnnus</span>
+              <span className="text-primary">Urve Tõnnus</span> – disainer, kellel on silma ja südant
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Graafiline disainer, kes aitab ettevõtetel ja loomeinimestel luua visuaalset identiteeti, 
-              mis on nii professionaalne kui ka südamega tehtud.
+              Disainer aastast 1975 – ja ei, ma ei plaani pensionile minna, 
+              sest head ideed ei vanane.
             </p>
           </section>
 
@@ -52,17 +56,24 @@ const About = () => {
                   <Palette className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-semibold mb-3">Minu taust</h2>
-                  <div className="prose text-muted-foreground space-y-3">
+                  <h2 className="text-2xl font-semibold mb-4">Üle nelja aastakümne visuaalses kultuuris</h2>
+                  <div className="prose text-muted-foreground space-y-4 leading-relaxed">
                     <p>
-                      Olen töötanud graafilise disainerina alates 1990. aastatest, olles näinud 
-                      disainimaailma arengut käsitööst digitaalsesse ajastusse. See pikk tee on 
-                      andnud mulle sügava arusaama nii klassikalisest kujundusest kui ka 
-                      kaasaegsetest digitaalsetest vajadustest.
+                      Minu töö on olnud osa Eesti visuaalsest kultuurist üle nelja aastakümne: 
+                      alates firmastiilidest ja logodest kuni rahvusvaheliste kunstinäitusteni. 
+                      Kui sa oled kunstnik, kultuurikorraldaja või alustav ettevõtja, kes vajab 
+                      selget visuaalset keelt, siis oled õiges kohas.
                     </p>
                     <p>
-                      Olen Eesti Naisarvutigraafikute Seltsi (ENAS) liige, mis tähendab pidevat 
-                      õppimist, kollegiaalset tuge ja kõrget professionaalset standardit.
+                      Minu loodud on firmastiilid <strong>Gloriale, Datelile ja Paide MEKile</strong> – 
+                      viimane kasutab minu logo siiani. Olen kujundanud Rahvarinde juubeli ja muuseumi 
+                      logod ning viinud läbi reklaamikampaaniaid sellistele brändidele nagu Siemens 
+                      Nixdorf, Casio ja Martela.
+                    </p>
+                    <p>
+                      Dateli logo tunnistati Talis Bachmanni uuringu põhjal Eesti IT-sektori 
+                      <strong> kõige assotsiatiivsemaks</strong> – mis tähendab, et see jäi inimestele 
+                      meelde ja tähendas neile midagi.
                     </p>
                   </div>
                 </div>
@@ -74,35 +85,51 @@ const About = () => {
                 <div className="p-3 bg-accent/10 rounded-lg w-fit">
                   <Award className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold">Mida teen?</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Logo kujundus ja visuaalne identiteet</li>
-                  <li>• Kaubamärkide registreerimine Patendiametis</li>
-                  <li>• Jõulukaardid ja bränditud tervitused</li>
-                  <li>• Kodulehed ja digitaalsed lahendused</li>
-                  <li>• Konsultatsioonid visuaalse kommunikatsiooni alal</li>
-                </ul>
+                <h3 className="text-xl font-semibold">Kunstnik rahvusvahelisel tasandil</h3>
+                <div className="space-y-3 text-muted-foreground leading-relaxed">
+                  <p>
+                    Kunstnikuna olen osalenud näitustel <strong>New Yorgist Zürichini</strong>, 
+                    võitnud rahvusvahelisi auhindu ja loonud kollaaže, mis räägivad naistest ja 
+                    sisemisest maailmast.
+                  </p>
+                  <p className="text-sm">
+                    Maale saab vaadata{" "}
+                    <a 
+                      href="https://www.urvetonnusart.eu" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline font-medium"
+                    >
+                      www.urvetonnusart.eu
+                    </a>
+                    {" "}– seal on ka natuke mu hinge.
+                  </p>
+                </div>
               </Card>
 
               <Card className="p-6 space-y-4">
                 <div className="p-3 bg-primary/10 rounded-lg w-fit">
                   <Heart className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">Minu väärtused</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• <strong>Empaatia:</strong> saan aru, et disain võib tunduda keeruline</li>
-                  <li>• <strong>Professionaalsus:</strong> kvaliteet ja täpsus on prioriteedid</li>
-                  <li>• <strong>Koostöö:</strong> teie ettevõte, minu oskused</li>
-                  <li>• <strong>Pikaajaline mõtlemine:</strong> loome lahendusi, mis kestavad</li>
-                  <li>• <strong>Esteetika:</strong> ilu pole luksus, vaid vajadus</li>
-                </ul>
+                <h3 className="text-xl font-semibold">Minu tööstiil</h3>
+                <div className="space-y-3 text-muted-foreground leading-relaxed">
+                  <p>
+                    <strong>Ma kuulan.</strong> Kui sa ei tea, kuidas kodulehte tellida, kardad 
+                    trükivigu või tunned, et su looming vajab nähtavust, siis ma aitan.
+                  </p>
+                  <p>
+                    Mitte ainult tehniliselt, vaid ka emotsionaalselt – sest loovus vajab turvalist 
+                    ruumi. Ja kui sa arvad, et su fail ei lähe trükki, siis ära muretse – ma olen 
+                    neid päästnud rohkem kui mõni kiirabi.
+                  </p>
+                </div>
               </Card>
             </div>
 
             <Card className="p-8 bg-accent/5 border-l-4 border-accent">
-              <p className="text-lg italic text-center">
-                "Hea disain ei ole ainult ilus – see jutustab lugu, loob usaldust ja jääb meelde. 
-                Minu eesmärk on, et teie bränd oleks koheselt äratuntav ja professionaalne."
+              <p className="text-lg italic text-center leading-relaxed">
+                "Head ideed ei vanane. Minu töö on aidata sul leida visuaalne keel, 
+                mis jutustab sinu lugu – selgelt, ilusalt ja meeldejäävalt."
               </p>
             </Card>
           </section>
