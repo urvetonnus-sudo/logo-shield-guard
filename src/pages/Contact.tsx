@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, Building } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import logo from "@/assets/enas_logo.jpg";
+import logo from "@/assets/logo.png";
 
 const Contact = () => {
   const { toast } = useToast();
