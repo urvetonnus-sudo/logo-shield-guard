@@ -40,11 +40,14 @@ const About = () => {
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold">
-              <span className="text-primary">Urve Tõnnus</span> – disainer, kellel on silma ja südant
+              <span className="text-primary">Urve Tõnnus</span> – disainer, kellel on silma, südant ja süsteemi
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Disainer aastast 1975 – ja ei, ma ei plaani pensionile minna, 
-              sest head ideed ei vanane.
+              Olen disainer olnud üle 40 aasta – ja ei, ma ei plaani lõpetada, 
+              sest head ideed ei vanane. Minu töö on olnud osa Eesti visuaalsest 
+              kultuurist: firmastiilidest ja logodest kuni rahvusvaheliste kunstinäitusteni. 
+              Kui oled kunstnik, kultuurikorraldaja või alustav ettevõtja, kes otsib selget 
+              visuaalset keelt, oled õiges kohas.
             </p>
           </section>
 
@@ -59,21 +62,13 @@ const About = () => {
                   <h2 className="text-2xl font-semibold mb-4">Üle nelja aastakümne visuaalses kultuuris</h2>
                   <div className="prose text-muted-foreground space-y-4 leading-relaxed">
                     <p>
-                      Minu töö on olnud osa Eesti visuaalsest kultuurist üle nelja aastakümne: 
-                      alates firmastiilidest ja logodest kuni rahvusvaheliste kunstinäitusteni. 
-                      Kui sa oled kunstnik, kultuurikorraldaja või alustav ettevõtja, kes vajab 
-                      selget visuaalset keelt, siis oled õiges kohas.
-                    </p>
-                    <p>
-                      Minu loodud on firmastiilid <strong>Gloriale, Datelile ja Paide MEKile</strong> – 
-                      viimane kasutab minu logo siiani. Olen kujundanud Rahvarinde juubeli ja muuseumi 
-                      logod ning viinud läbi reklaamikampaaniaid sellistele brändidele nagu Siemens 
-                      Nixdorf, Casio ja Martela.
-                    </p>
-                    <p>
-                      Dateli logo tunnistati Talis Bachmanni uuringu põhjal Eesti IT-sektori 
-                      <strong> kõige assotsiatiivsemaks</strong> – mis tähendab, et see jäi inimestele 
-                      meelde ja tähendas neile midagi.
+                      Minu loodud on firmastiilid <strong>Kaubandusministeeriumile, Gloriale ja Paide MEKile</strong> – 
+                      viimane kasutab minu logo siiani. Olen kujundanud Rahvarinde juubeli ja muuseumi, 
+                      Dateli, Eesti Instituudi, The Perfect Design.com-i ning Eesti Naistoimetajate logod. 
+                      Reklaamikampaaniaid olen teinud sellistele brändidele nagu Siemens Nixdorf, Casio ja Martela. 
+                      Dateli logo tunnistati Talis Bachmanni uuringu põhjal Eesti IT-sektori kõige assotsiatiivsemaks – 
+                      see jäi inimestele meelde ja tähendas neile midagi. (Praegu kasutab firma küll teist logo, 
+                      aga see on juba teine lugu.)
                     </p>
                   </div>
                 </div>
@@ -88,12 +83,9 @@ const About = () => {
                 <h3 className="text-xl font-semibold">Kunstnik rahvusvahelisel tasandil</h3>
                 <div className="space-y-3 text-muted-foreground leading-relaxed">
                   <p>
-                    Kunstnikuna olen osalenud näitustel <strong>New Yorgist Zürichini</strong>, 
-                    võitnud rahvusvahelisi auhindu ja loonud kollaaže, mis räägivad naistest ja 
-                    sisemisest maailmast.
-                  </p>
-                  <p className="text-sm">
-                    Maale saab vaadata{" "}
+                    Kunstnikuna olen osalenud näitustel <strong>New Yorgist Vietnamini</strong>, 
+                    võitnud rahvusvahelisi auhindu ja loonud kollaaže, mis räägivad naistest, 
+                    linnadest ja sisemisest maailmast. Maale saab vaadata{" "}
                     <a 
                       href="https://www.urvetonnusart.eu" 
                       target="_blank" 
@@ -114,13 +106,11 @@ const About = () => {
                 <h3 className="text-xl font-semibold">Minu tööstiil</h3>
                 <div className="space-y-3 text-muted-foreground leading-relaxed">
                   <p>
-                    <strong>Ma kuulan.</strong> Kui sa ei tea, kuidas kodulehte tellida, kardad 
-                    trükivigu või tunned, et su looming vajab nähtavust, siis ma aitan.
-                  </p>
-                  <p>
-                    Mitte ainult tehniliselt, vaid ka emotsionaalselt – sest loovus vajab turvalist 
-                    ruumi. Ja kui sa arvad, et su fail ei lähe trükki, siis ära muretse – ma olen 
-                    neid päästnud rohkem kui mõni kiirabi.
+                    Minu tööstiil on lihtne: <strong>ma kuulan.</strong> Kui sa ei tea, kuidas 
+                    kodulehte tellida, kardad trükivigu või tunned, et su looming vajab nähtavust, 
+                    siis ma aitan. Mitte ainult tehniliselt, vaid ka emotsionaalselt – sest loovus 
+                    vajab turvalist ruumi. Ja kui sa arvad, et su fail ei lähe trükki, siis ära 
+                    muretse – ma olen neid päästnud rohkem kui mõni kiirabi.
                   </p>
                 </div>
               </Card>
