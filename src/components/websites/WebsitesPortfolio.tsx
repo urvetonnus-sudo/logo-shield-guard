@@ -9,18 +9,21 @@ const WebsitesPortfolio = () => {
       title: "MOJO Interior Design",
       description: "Sisekujundaja koduleht portfoolio ja teenuste tutvustusega. Elegantne galerii ja selge struktuur.",
       tags: ["Portfoolio", "Galerii", "Mitmekeelne"],
+      url: "https://www.mojo-design.ee",
     },
     {
       image: nahakunstnikudImage,
       title: "Eesti Nahakunstnike Liit",
       description: "Organisatsiooni veebileht ürituste, galerii ja liikmete tutvustusega. Professionaalne ja informatiivne.",
       tags: ["Organisatsioon", "Galerii", "Üritused"],
+      url: "https://www.nahakunst.ee",
     },
     {
       image: piirtoImage,
       title: "Taidesalonki Piirto",
       description: "Kunstniku ja taidesalongi koduleht maalide ja teenuste esitlusega. Soojad toonid ja isiklik lähenemine.",
       tags: ["Kunstnik", "Teenused", "Galerii"],
+      url: "https://www.piirto.com",
     },
   ];
 
@@ -40,18 +43,31 @@ const WebsitesPortfolio = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="space-y-4 group">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <a 
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block aspect-[4/3] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              >
                 <img 
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-              </div>
+              </a>
               <div className="space-y-2">
                 <h3 className="font-semibold text-lg">{project.title}</h3>
                 <p className="text-sm text-muted-foreground">
                   {project.description}
                 </p>
+                <a 
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline font-medium inline-block"
+                >
+                  {project.url.replace('https://www.', '')}
+                </a>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <span key={idx} className="text-xs px-2 py-1 bg-primary/10 text-primary rounded">

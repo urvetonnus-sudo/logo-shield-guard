@@ -19,7 +19,7 @@ const ForWhom = () => {
     },
     {
       icon: BookOpen,
-      title: "Koolitajad ja esinemisjad",
+      title: "Koolitajad ja esinejad",
       description: "Koolituste kalender, teemade tutvustus, tagasiside. Veebileht, kus inimesed saavad tutvuda su tööga ja registreerida sündmustele.",
     },
   ];

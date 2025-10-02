@@ -8,7 +8,7 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Logode registreerimine" },
+    { path: "/", label: "Registreeritavad logod" },
     { path: "/christmas-cards", label: "Jõulukaardid" },
     { path: "/websites", label: "Kodulehed" },
     { path: "/about", label: "Minust" },
