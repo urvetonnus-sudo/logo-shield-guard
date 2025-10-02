@@ -84,21 +84,12 @@ const updateStructuredData = (data: object) => {
 };
 
 const initializeAnalytics = () => {
-  // Google Analytics - Universal Analytics
-  const GA_ID = "UA-30022975-1";
-  
-  if (!window.gtag) {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-    document.head.appendChild(script);
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function() {
-      window.dataLayer.push(arguments);
-    };
-    window.gtag("js", new Date());
-    window.gtag("config", GA_ID);
+  // Google Analytics is loaded via index.html
+  // Tracking pageviews on route changes
+  if (window.gtag) {
+    window.gtag("event", "page_view", {
+      page_path: window.location.pathname + window.location.search,
+    });
   }
 };
 
