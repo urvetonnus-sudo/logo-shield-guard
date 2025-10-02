@@ -13,7 +13,7 @@ const Requirements = () => {
     },
     {
       title: "Tehnilised nõuded",
-      description: "Failiformaat peab olema kvaliteetne (JPG, PNG, PDF). Minimaalne suurus 8x8 cm, resolutsioon vähemalt 300 DPI."
+      description: "Failiformaat peab olema kvaliteetne (JPG, PNG). Minimaalne suurus 8x8 cm, resolutsioon vähemalt 300 DPI."
     },
     {
       title: "Klassifikatsioon",
