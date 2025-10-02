@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, Building } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import logo from "@/assets/logo-enas.png";
+import logo from "@/assets/enas_logo.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -61,7 +61,7 @@ const Contact = () => {
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-4">
             <div className="flex justify-center mb-6">
-              <img src={logo} alt="ENAS" className="h-16 w-auto brightness-0" />
+              <img src={logo} alt="ENAS - Eesti Naisarvutigraafikute Selts" className="h-16 w-auto" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold">
               Võtame <span className="text-primary">ühendust</span>
