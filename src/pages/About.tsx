@@ -116,6 +116,36 @@ const About = () => {
               </Card>
             </div>
 
+            <Card className="p-8 space-y-4 bg-gradient-to-br from-primary/5 to-accent/5">
+              <h3 className="text-xl font-semibold">Kanada video minu voltimisraamatute põhjal</h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Mõnikord jõuab looming ootamatutesse kohtadesse. Reisihuviline Kanada tantsu- ja muusikaõpetaja 
+                  Sonia Maheux külastas Tallinna ja ostis kaasa minu ja Heiki Kongi voltimisraamatud{" "}
+                  <em>Paberist Tallinna vanalinn</em> ning <em>Paberist Viru värav</em>. Raamatud inspireerisid 
+                  teda looma video, kus Tallinna vanalinn ärkab ellu läbi paberi, muusika ja liikumise.
+                </p>
+                <p>
+                  Sonia kaasas projekti oma venna Richard Maheux', kes hoolitses visuaalse poole ja muusika eest. 
+                  Richard on muusikaprodutsent, kes on töötanud artistidega nagu Rihanna, Rock of Ages ja 
+                  Cirque du Soleil. Praegu esineb ta koos Enrique Iglesiasega – ja ometi leidis ta aega, 
+                  et tuua Tallinna vaim Kanadasse.
+                </p>
+                <p>
+                  Videos kõlab Eestis tuntud laul <em>Üle lume lagedale</em> prantsuse keeles. Tulemus on 
+                  mänguline, poeetiline ja täiesti ootamatu. Aga eks vaadake ise, kuidas näevad meie pealinna nemad:{" "}
+                  <a 
+                    href="https://www.youtube.com/watch?v=lP3Lbqcb5OQ&t=2s" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline font-medium"
+                  >
+                    vaata videot
+                  </a>
+                </p>
+              </div>
+            </Card>
+
             <Card className="p-8 bg-accent/5 border-l-4 border-accent">
               <p className="text-lg italic text-center leading-relaxed">
                 "Head ideed ei vanane. Minu töö on aidata sul leida visuaalne keel, 
