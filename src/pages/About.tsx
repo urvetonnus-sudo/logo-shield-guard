@@ -39,6 +39,9 @@ const About = () => {
                 className="w-48 h-48 rounded-full object-cover shadow-2xl ring-4 ring-primary/20" 
               />
             </div>
+            <p className="text-lg font-medium text-primary mb-4">
+              Olen Eesti Disainerite Liidu liige
+            </p>
             <h1 className="text-4xl md:text-5xl font-bold">
               <span className="text-primary">Urve Tõnnus</span> – disainer, kellel on silma, südant ja süsteemi
             </h1>
@@ -167,11 +170,6 @@ const About = () => {
                   <Mail className="mr-2 h-5 w-5" />
                   Võta ühendust
                 </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="mailto:urvetonnus@gmail.com">
-                  Kirjuta otse
-                </a>
               </Button>
             </div>
           </section>
