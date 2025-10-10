@@ -5,6 +5,7 @@ import Requirements from "@/components/Requirements";
 import Risks from "@/components/Risks";
 import Investment from "@/components/Investment";
 import Portfolio from "@/components/Portfolio";
+import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 
 const Index = () => {
@@ -37,6 +38,7 @@ const Index = () => {
         <Risks />
         <Investment />
         <Portfolio />
+        <Testimonials />
         <CTA />
       </main>
     </>
