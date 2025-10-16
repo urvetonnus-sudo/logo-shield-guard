@@ -1,6 +1,7 @@
 import SEO from "@/components/SEO";
 import Hero from "@/components/Hero";
 import WhyRegister from "@/components/WhyRegister";
+import AILogoConsultation from "@/components/AILogoConsultation";
 import Requirements from "@/components/Requirements";
 import Risks from "@/components/Risks";
 import Investment from "@/components/Investment";
@@ -34,6 +35,7 @@ const Index = () => {
       <main className="min-h-screen">
         <Hero />
         <WhyRegister />
+        <AILogoConsultation />
         <Requirements />
         <Risks />
         <Investment />
