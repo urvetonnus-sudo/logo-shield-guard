@@ -13,23 +13,39 @@ const Index = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Logo kujundus ja registreerimine",
-    "description": "Professionaalne logo kujundus ja kaubamärgi registreerimine Eesti Patendiametis. Täielik teenus logode loomisest kuni õiguskaitseni.",
+    "name": "Logo kujundus, AI-logo viimistlus ja registreerimine",
+    "description": "Professionaalne logo kujundus, AI-logode analüüs ja viimistlus ning kaubamärgi registreerimine Eesti Patendiametis. Täielik teenus logode loomisest, AI-logode vektoriseerimisest ja parandamisest kuni õiguskaitseni.",
     "provider": {
       "@type": "Person",
       "name": "Urve Tõnnus",
       "email": "urvetonnus@gmail.com"
     },
     "areaServed": "EE",
-    "availableLanguage": "et"
+    "availableLanguage": "et",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "itemOffered": [
+        {
+          "@type": "Service",
+          "name": "AI-logo viimistlus ja vektoriseerimine",
+          "description": "AI-ga loodud logode professionaalne viimistlus, vektoriseerimine ja registreerimiskõlblikuks muutmine"
+        },
+        {
+          "@type": "Service",
+          "name": "Logo kujundus ja registreerimine",
+          "description": "Professionaalne logo loomine ja kaubamärgi registreerimine Patendiametis"
+        }
+      ]
+    }
   };
 
   return (
     <>
       <SEO
-        title="Logo kujundus ja registreerimine - Professionaalne bränding"
-        description="Loon teie ettevõttele professionaalse logo ja aitan registreerida kaubamärgi Eesti Patendiametis. Täielik teenus brändi loomisest kuni õiguskaitseni."
-        keywords="logo kujundus, kaubamärgi registreerimine, logo disain, patendiamet, bränding, visuaalne identiteet"
+        title="Logo kujundus ja registreerimine - AI-logo viimistlus ja analüüs"
+        description="Professionaalne logo kujundus, AI-logo viimistlus ja vektoriseerimine ning kaubamärgi registreerimine Patendiametis. Täielik teenus logode loomisest ja AI-logode parandamisest kuni õiguskaitseni."
+        keywords="logo kujundus, kaubamärgi registreerimine, AI logo viimistlus, logo vektoriseerimine, logo analüüs, patendiamet, bränding, visuaalne identiteet, Midjourney logo, Canva logo"
         structuredData={structuredData}
       />
       <main className="min-h-screen">
